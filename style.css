@@ -1,0 +1,53 @@
+/*Style de la navbar de la page d'inscription*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 2vh 4vw;
+}
+.navbar .logo {
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+}
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-links p {
+    color: white;
+    margin: 0;
+    margin-right: 2vw;
+    font-size: 2vh;
+}
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 1vh 2vw;
+    border-radius: 0.5vh;
+    transition: background-color 0.3s;
+}
+.navbar .nav-links a:hover {
+    background-color: #0056b3;
+}
+
+/*Style de la navbar de la page d'inscription*/
+
+@media (max-width: 768px) {
+    /*Style de la navbar de la page d'inscription*/
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .nav-links {
+        margin-top: 2vh;
+    }
+    /*Style de la navbar de la page d'inscription*/
+}
