@@ -3,6 +3,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
 .navbar {
     display: flex;
@@ -12,10 +18,10 @@ body {
     padding: 2vh 4vw;
 }
 .navbar .logo {
+    display: flex;
     color: white;
-    font-size: 3vh;
-    font-weight: bold;
 }
+
 .navbar .nav-links {
     display: flex;
     align-items: center;
@@ -24,19 +30,15 @@ body {
     color: white;
     margin: 0;
     margin-right: 2vw;
-    font-size: 2vh;
+    font-size: 2.8vh;
 }
 .navbar .nav-links a {
     color: white;
-    text-decoration: none;
-    background-color: #007bff;
-    padding: 1vh 2vw;
+    padding: 1vh 0.5vw;
     border-radius: 0.5vh;
     transition: background-color 0.3s;
 }
-.navbar .nav-links a:hover {
-    background-color: #0056b3;
-}
+
 
 /*Style de la navbar de la page d'inscription*/
 
