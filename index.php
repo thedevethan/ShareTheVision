@@ -1,7 +1,7 @@
-<?php require("../sharethevision/php/header.php")?>
+<?php require("php/header.php")?>
 
 <body>
-    <?php require("../sharethevision/php/login/navbar_login.php")?>
+    <?php require("php/login/navbar_login.php")?>
 </body>
 
 </html>
