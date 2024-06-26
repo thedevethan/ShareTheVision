@@ -1,6 +1,7 @@
 <?php
 
-function nav_subscribe($text, $sign_log)
+
+function nav_subscribe($text, $sign_log, $link)
 {
 ?>
     <nav>
@@ -14,7 +15,7 @@ function nav_subscribe($text, $sign_log)
             <p>
                 <?php echo $text; ?>
             </p>
-            <a href="#">
+            <a <?php echo $link; ?> >
                 <?php echo $sign_log; ?>
             </a>
         </div>
@@ -22,8 +23,6 @@ function nav_subscribe($text, $sign_log)
     </nav>
 <?php
 }
-
-nav_subscribe("Don't have an account?", "Sign Up")
 
 
 ?>
