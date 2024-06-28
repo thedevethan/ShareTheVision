@@ -47,8 +47,84 @@ nav {
     margin-top: 2.8vh;
 }
 
-
 /*Style de la navbar de la page d'inscription*/
+
+/*Style du formulaire de login*/
+.log {
+    font-size: 140%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.login {
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.body_login {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.log_sign_up {
+    display: flex;
+    gap: 1vw;
+    padding-bottom: 1.5vh;
+}
+
+.log_sign_up a {
+    margin-top: 2.7vh;
+    color: #000;
+}
+
+#email, #password {
+    width: 22vw;
+    padding: 2vh;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.choice_login {
+    display: flex;
+    justify-content:space-around;
+}
+
+#forgot {
+    width: 10vw;
+    height: 8vh;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+    background-color: #ffffff;
+}
+
+#forgot:hover {
+    background-color: #ffffffd8;
+}
+
+#sub_login {
+    color: white;
+    background-color: black;
+    border: none;
+    width: 7vw;
+    height: 8vh;
+    border-radius: 10px;
+
+
+}
+/*Style du formulaire de login*/
+
 
 @media only screen and (max-width: 599px) {
     /*Style de la navbar de la page d'inscription*/

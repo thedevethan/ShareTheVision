@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php 
 
-<head>
+function hd($style)
+{
+    ?>
+    <head>
     <!--Encodage-->
     <meta charset="UTF-8">
     
@@ -9,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Style-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" <?php echo $style; ?> >
     <link rel="icon" href="image/view.png">
     
     <!--Font-->
@@ -29,3 +33,7 @@
     <!--Title-->
     <title>ShareTheVision</title>
 </head>
+    <?php
+}
+
+?>

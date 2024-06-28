@@ -1,16 +1,16 @@
 <?php
 
 
-function nav_subscribe($text, $sign_log, $link)
+function nav_subscribe($text, $sign_log, $link, $img)
 {
 ?>
     <nav>
-
+        
         <div class="logo">
-            <img src="image/view.png" alt="eye_logo" height="35">
+            <img <?php echo $img; ?> alt="eye_logo" height="35">
             <p class="name_site">ShareTheVision</p>
         </div>
-
+        
         <div class="link">
             <p>
                 <?php echo $text; ?>
@@ -23,6 +23,5 @@ function nav_subscribe($text, $sign_log, $link)
     </nav>
 <?php
 }
-
 
 ?>
