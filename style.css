@@ -120,31 +120,32 @@ nav {
     width: 7vw;
     height: 8vh;
     border-radius: 10px;
-
-
 }
+
 /*Style du formulaire de login*/
 
 
 @media only screen and (max-width: 599px) {
     /*Style de la navbar de la page d'inscription*/
     nav {
-        padding-left: 2vw;
-        padding-right: 2vw;
-        padding-top: 2vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 0.6vh;
         padding-bottom: 1.8vh;
     }
     
     .logo {
         gap: 1vw;
     }
-    
+
     .name_site {
         font-size: 110%;
+        display: none;
     }
     
     .logo img {
         margin-top: 1.3vh;
+        height: 8vh;
     }
     
     .link {
