@@ -10,7 +10,7 @@ hd("href = ../style.css")
     <!--navbar de la page du login-->
     <?php 
     require("navbar_login.php");
-    nav_subscribe("Already an account?", "Log In", 'href = "../index.php"', 'src = "../image/view.png"');
+    nav_subscribe("Déjà un compte?", "Connectez-vous", 'href = "../index.php"', 'src = "../image/view.png"');
     ?>
 
 </body>
