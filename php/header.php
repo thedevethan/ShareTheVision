@@ -31,6 +31,10 @@ function hd($style)
 
         <!--Mobile logo android-->
         <link rel="icon" sizes="192x192" href="https://sharethevision.000webhostapp.com/image/view2192x192.png" />
+
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <!--Title-->
         <title>ShareTheVision</title>
     </head>

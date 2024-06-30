@@ -4,7 +4,7 @@
         <p>
             Vous n'avez pas de compte?
         </p>
-        <a href="#">Inscrivez-vous</a>
+        <a href="php/signup_form.php">Inscrivez-vous</a>
     </div>
     <div class="body_login">
         <input type="email" name="email" id="email" placeholder="email" maxlength="255" required>

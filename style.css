@@ -61,7 +61,7 @@ nav {
     padding-bottom: 5vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,12 +101,13 @@ nav {
     justify-content:space-around;
 }
 
-#forgot {
-    width: 10vw;
-    height: 8vh;
+.forgot {
     border-radius: 10px;
     border: 0.5px solid #000;
     background-color: #ffffff;
+    color: #000;
+    text-decoration: none;
+    padding: 2vh;
 }
 
 #forgot:hover {
@@ -117,12 +118,103 @@ nav {
     color: white;
     background-color: black;
     border: none;
-    width: 7vw;
+    width: 9vw;
     height: 8vh;
     border-radius: 10px;
 }
 
+#sub_login:hover {
+    background-color: #000000d8;
+}
+
 /*Style du formulaire de login*/
+
+/*Style du formulaire de signup*/
+
+.sign {
+    font-size: 140%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.signup {
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.body_signup {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.sign_up_log {
+    display: flex;
+    gap: 1vw;
+    padding-bottom: 1.5vh;
+}
+
+.sign_up_log a {
+    margin-top: 2.7vh;
+    color: #000;
+}
+
+#username, #confirm_password {
+    width: 22vw;
+    padding: 2vh;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#sub_signup {
+    color: white;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    border: none;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 10px;
+}
+
+#sub_signup:hover {
+    background-color: #000000d8;
+}
+
+.dev_choice {
+    display: flex;
+}
+
+.status {
+    margin-top: 2.9vh;
+}
+
+#info_dev {
+    margin-top: 3vh;
+    padding: 0;
+    color: red;
+    font-size: 90%;
+    
+}
+
+.dev_choice {
+    margin-top: -4vh;
+}
+
+/*Style du formulaire de signup*/
 
 
 @media only screen and (max-width: 599px) {
@@ -130,7 +222,7 @@ nav {
     nav {
         padding-left: 3vw;
         padding-right: 3vw;
-        padding-top: 0.6vh;
+        padding-top: 0.05vh;
         padding-bottom: 1.8vh;
     }
     
@@ -159,4 +251,123 @@ nav {
         margin-top: 0vh;
     }
     /*Style de la navbar de la page d'inscription*/
+
+    /*Style du formulaire de login*/
+    .log {
+        font-size: 140%;
+    }
+
+    .login {
+        padding-top: 4vh;
+        padding-bottom: 5vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-top: 10vh;
+        width: 75vw;
+    }
+
+    .body_login {
+        gap: 3vh;
+
+    }
+
+    .log_sign_up {
+        gap: 0vw;
+        padding-bottom: 3vh;
+        flex-direction: column;
+    }
+
+    .log_sign_up a {
+        margin-top: 0vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #email, #password {
+        width: 53vw;
+        padding: 1.5vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .forgot {
+        padding: 1vh;
+        font-size: 100%;
+    }
+
+
+    #sub_login {
+        width: 23vw;
+        height: 5vh;
+        border-radius: 13.5px;
+    }
+
+    .choice_login {
+        gap: 1vw;
+    }
+
+/*Style du formulaire de login*/
+
+/*Style du formulaire de signup*/
+
+    .signup {
+        padding-top: 4vh;
+        padding-bottom: 5vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-top: 10vh;
+        width: 75vw;
+    }
+
+    .body_signup {
+        gap: 3vh;
+    }
+
+    .sign_up_log {
+        flex-direction: column;
+        gap: 0vw;
+        padding-bottom: 3vh;
+    }
+
+    .sign_up_log a {
+        margin-top: 0vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #username, #confirm_password {
+        width: 53vw;
+        padding: 1.5vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sub_signup {
+        width: 30vw;
+        height: 5vh;
+        border-radius: 13.5px;
+        margin-top: 1vh;
+    }
+
+    
+    .status {
+        margin-top: 2.2vh;
+    }
+    
+    #info_dev {
+        margin-top: 1vh;
+        margin-bottom: 0.2vh;
+        padding: 0;
+        color: red;
+        font-size: 70%;
+        
+    }
+    
+    .dev_choice {
+        margin-top: -2vh;
+    }
+
+
+
+/*Style du formulaire de signup*/
 }
