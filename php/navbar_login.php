@@ -7,7 +7,7 @@ function nav_subscribe($text, $sign_log, $link, $img)
     <nav>
         
         <div class="logo">
-            <img <?php echo $img; ?> alt="eye_logo" height="35">
+            <img <?php echo $img; ?> alt="eye_logo">
             <p class="name_site">ShareTheVision</p>
         </div>
         
