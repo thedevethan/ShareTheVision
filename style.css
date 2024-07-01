@@ -1,4 +1,18 @@
 
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+    font-family: Arial, sans-serif;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -203,7 +217,7 @@ nav {
 }
 
 #info_dev {
-    margin-top: 3vh;
+    margin-top: 2vh;
     padding: 0;
     color: red;
     font-size: 90%;
