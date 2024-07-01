@@ -1,20 +1,36 @@
 
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+button,
+input,
+optgroup,
+select,
+textarea {
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 400; /* Utilisez des valeurs spécifiques pour le poids */
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    font-variation-settings: "wdth" 100;
+    font-size: 100%;
+}
+
+/* Styles spécifiques pour les placeholders */
+::placeholder {
+    font-family: "Inconsolata", monospace;
+    font-size: 16px; /* Ajustez la taille selon vos besoins */
+    opacity: 1; /* Assurez-vous que le texte soit entièrement opaque */
+}
+
+/* Styles spécifiques pour iOS */
+@supports (-webkit-touch-callout: none) {
+    ::placeholder {
+        font-size: 16px; /* Ajustez la taille selon vos besoins */
     }
+}
 
 body {
     margin: 0;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
@@ -108,20 +124,19 @@ nav {
     padding: 2vh;
     border-radius: 10px;
     border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .choice_login {
     display: flex;
     justify-content:space-around;
+    gap: 1vw;
 }
 
 .forgot {
-    border-radius: 10px;
-    border: 0.5px solid #000;
-    background-color: #ffffff;
     color: #000;
-    text-decoration: none;
-    padding: 2vh;
+    margin-top: 1.5vh;
 }
 
 #forgot:hover {
@@ -132,8 +147,8 @@ nav {
     color: white;
     background-color: black;
     border: none;
-    width: 9vw;
-    height: 8vh;
+    width: 10vw;
+    height: 7vh;
     border-radius: 10px;
 }
 
@@ -305,19 +320,21 @@ nav {
     }
 
     .forgot {
-        padding: 1vh;
         font-size: 100%;
+        margin-top: 0.3vh;
+        width: 25vw;
+        text-align: center;
     }
 
-
     #sub_login {
-        width: 23vw;
-        height: 5vh;
+        width: 28vw;
+        height: 6vh;
         border-radius: 13.5px;
+        padding: 0;
     }
 
     .choice_login {
-        gap: 1vw;
+        gap: 0vw;
     }
 
 /*Style du formulaire de login*/
@@ -359,6 +376,7 @@ nav {
     #sub_signup {
         width: 30vw;
         height: 5vh;
+        padding: 0;
         border-radius: 13.5px;
         margin-top: 1vh;
     }
