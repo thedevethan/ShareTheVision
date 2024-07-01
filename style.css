@@ -11,20 +11,20 @@ textarea {
     font-weight: 400; /* Utilisez des valeurs spécifiques pour le poids */
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    font-size: 100%;
+    font-size: 1.25vw;
 }
 
 /* Styles spécifiques pour les placeholders */
 ::placeholder {
     font-family: "Inconsolata", monospace;
-    font-size: 16px; /* Ajustez la taille selon vos besoins */
+    font-size: 1.25vw; /* Ajustez la taille selon vos besoins */
     opacity: 1; /* Assurez-vous que le texte soit entièrement opaque */
 }
 
 /* Styles spécifiques pour iOS */
 @supports (-webkit-touch-callout: none) {
     ::placeholder {
-        font-size: 16px; /* Ajustez la taille selon vos besoins */
+        font-size: 1.25vw; /* Ajustez la taille selon vos besoins */
     }
 }
 
@@ -59,7 +59,7 @@ nav {
 }
 
 .name_site {
-    font-size: 120%;
+    font-size: 1.5vw;
 }
 
 .logo img {
@@ -68,6 +68,7 @@ nav {
 
 .link {
     margin-top: 0.8vh;
+    font-size: 1.25vw;
     gap: 1.7vw;
     display: flex;
 }
@@ -260,7 +261,6 @@ nav {
     }
 
     .name_site {
-        font-size: 110%;
         display: none;
     }
     
@@ -272,6 +272,7 @@ nav {
     .link {
         margin-top: 0.4vh;
         gap: 0vh;
+        font-size: 4vw;
         flex-direction: column;
         align-items: center;
     }
@@ -320,7 +321,7 @@ nav {
     }
 
     .forgot {
-        font-size: 100%;
+        font-size: 4vw;
         margin-top: 0.3vh;
         width: 25vw;
         text-align: center;
@@ -374,7 +375,7 @@ nav {
     }
 
     #sub_signup {
-        width: 30vw;
+        width: 35vw;
         height: 5vh;
         padding: 0;
         border-radius: 13.5px;
@@ -399,6 +400,25 @@ nav {
         margin-top: -2vh;
     }
 
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-size: 4vw;
+    }
+
+    /* Styles spécifiques pour les placeholders */
+    ::placeholder {
+        font-size: 4vw; /* Ajustez la taille selon vos besoins */
+    }
+
+/* Styles spécifiques pour iOS */
+    @supports (-webkit-touch-callout: none) {
+        ::placeholder {
+            font-size: 4vw; /* Ajustez la taille selon vos besoins */
+        }
+    }
 
 
 /*Style du formulaire de signup*/
