@@ -32,6 +32,16 @@ function hd($style)
         <!--Mobile logo android-->
         <link rel="icon" sizes="192x192" href="https://sharethevision.000webhostapp.com/image/view2192x192.png" />
 
+        <!--Application mobile-->
+        <link rel="manifest" href="/manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="/image/view2180x180.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/image/view2180x180.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/image/view2152x152.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/image/view2120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/image/view276x76.png">
+
         <!--Jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
