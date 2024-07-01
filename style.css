@@ -38,6 +38,7 @@ body {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+    overflow-x: hidden;
 }
 
 /*Style de la navbar de la page d'inscription*/
@@ -246,6 +247,84 @@ nav {
 
 /*Style du formulaire de signup*/
 
+/*Style du menu du catalog*/
+
+.user {
+    margin-top: 1.9vh;
+}
+
+.menu {
+    background-color: rgb(25, 24, 24);
+    position: absolute;
+    width: 17vw;
+    top: 0;
+    right: -18vw;
+    border-radius: 2vw 0vw 0vw 2vw;
+    border: 1px solid #ffffff;
+}
+
+.headermenu {
+    display: flex;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.22vh;
+    padding-bottom: 2.22vh;
+    border-radius: 2vw 0vw 0vw 0vw;
+    border-bottom: 1px solid #ffffff;
+}
+
+.headermenu img {
+    padding: 0.2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.usernamemenu {
+    display: flex;
+    gap: 0.3vw;
+    justify-content: space-between;
+}
+
+.usernamemenu p {
+    color: #ffffff;
+}
+
+.close {
+    padding: 0.2vw;
+    border-radius: 0.3vw;
+}
+
+.close:hover {
+    background-color: #ffffff78;
+} 
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 2vw;
+    gap: 4vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.2vw;
+    border-radius: 0.3vw;
+}
+
+.menu ul li a:hover {
+    background-color: #ffffff56;
+}
+
+/*Style du menu du catalog*/
+
 
 @media only screen and (max-width: 599px) {
     /*Style de la navbar de la page d'inscription*/
@@ -400,6 +479,10 @@ nav {
         margin-top: -2vh;
     }
 
+/*Style du formulaire de signup*/
+
+/*Style des normalize*/
+
     button,
     input,
     optgroup,
@@ -413,13 +496,13 @@ nav {
         font-size: 4vw; /* Ajustez la taille selon vos besoins */
     }
 
-/* Styles spécifiques pour iOS */
+    /* Styles spécifiques pour iOS */
     @supports (-webkit-touch-callout: none) {
         ::placeholder {
             font-size: 4vw; /* Ajustez la taille selon vos besoins */
         }
     }
 
+/*Style des normalize*/
 
-/*Style du formulaire de signup*/
 }
