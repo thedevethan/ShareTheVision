@@ -12,6 +12,7 @@ textarea {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     font-size: 1.25vw;
+    border-radius: 1vw;
 }
 
 /* Styles spécifiques pour les placeholders */
@@ -102,7 +103,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 
 .body_login {
@@ -125,7 +126,6 @@ nav {
 #email, #password {
     width: 22vw;
     padding: 2vh;
-    border-radius: 10px;
     border: 1px solid #000;
     margin-left: auto;
     margin-right: auto;
@@ -152,11 +152,18 @@ nav {
     border: none;
     width: 10vw;
     height: 7vh;
-    border-radius: 10px;
 }
 
 #sub_login:hover {
     background-color: #000000d8;
+}
+
+.login_error {
+    color: red;
+    font-size: 1vw;
+    position: absolute;
+    top: 35vh;
+    left: 38.59vw;
 }
 
 /*Style du formulaire de login*/
@@ -183,7 +190,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 
 .body_signup {
@@ -206,7 +213,6 @@ nav {
 #username, #confirm_password {
     width: 22vw;
     padding: 2vh;
-    border-radius: 10px;
     border: 1px solid #000;
 }
 
@@ -219,7 +225,6 @@ nav {
     border: none;
     width: 12vw;
     height: 8vh;
-    border-radius: 10px;
 }
 
 #sub_signup:hover {
@@ -238,7 +243,7 @@ nav {
     margin-top: 2vh;
     padding: 0;
     color: red;
-    font-size: 90%;
+    font-size: 1vw;
     
 }
 
@@ -374,6 +379,7 @@ nav {
         padding-right: 1vw;
         margin-top: 10vh;
         width: 75vw;
+        border-radius: 3vw;
     }
 
     .body_login {
@@ -410,7 +416,6 @@ nav {
     #sub_login {
         width: 28vw;
         height: 6vh;
-        border-radius: 13.5px;
         padding: 0;
     }
 
@@ -429,6 +434,7 @@ nav {
         padding-right: 1vw;
         margin-top: 10vh;
         width: 75vw;
+        border-radius: 3vw;
     }
 
     .body_signup {
@@ -458,7 +464,6 @@ nav {
         width: 35vw;
         height: 5vh;
         padding: 0;
-        border-radius: 13.5px;
         margin-top: 1vh;
     }
 
@@ -472,7 +477,7 @@ nav {
         margin-bottom: 0.2vh;
         padding: 0;
         color: red;
-        font-size: 70%;
+        font-size: 2.5vw;
         
     }
     
@@ -490,6 +495,7 @@ nav {
     select,
     textarea {
         font-size: 4vw;
+        border-radius: 3vw;
     }
 
     /* Styles spécifiques pour les placeholders */

@@ -1,6 +1,15 @@
 <?php
+
+session_start();
+
+if ($_SESSION["autorisation"] != true)
+{
+    header("Location:../index.php");
+    exit();  // Quitte le script si l'utilisateur n'est pas connecté.
+}
+
 require("header.php");
-hd("href = ../style.css")
+hd("href = ../style.css");
 ?>
 
 
@@ -23,7 +32,9 @@ hd("href = ../style.css")
             <div class="usernamemenu">
                 <img class="user" src="../image/user.png" alt="user" height="35">
                 <p>
-                    usernameeeeeeee
+                    <?php 
+                    echo $_SESSION["username"];
+                    ?>
                 </p>
             </div>
             <img class="close" src="../image/close.png" alt="close" height="20">

@@ -1,5 +1,7 @@
 <!--header-->
 <?php
+session_start();
+
 require("php/header.php");
 hd('href="style.css"');
 ?>
