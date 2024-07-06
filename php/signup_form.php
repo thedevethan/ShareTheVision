@@ -1,7 +1,9 @@
 <!--header-->
 <?php
 
-session_start();
+
+
+require("session_config.php");
 
 require("header.php");
 hd("href = ../style.css");

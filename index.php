@@ -1,6 +1,16 @@
 <!--header-->
 <?php
-session_start();
+
+
+
+require("php/session_config.php");
+
+if (isset($_SESSION["autorisation"]) && $_SESSION["autorisation"] == true)
+{
+    header("Location: php/catalog.php");
+    exit();  // Quitte le script si l'utilisateur est déjà connecté.
+}
+
 
 require("php/header.php");
 hd('href="style.css"');

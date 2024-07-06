@@ -15,7 +15,7 @@ function hd($style)
 
         <!--Style-->
         <link rel="stylesheet" <?php echo $style; ?>>
-        <link rel="icon" href="image/view.png">
+        <link rel="icon" href="image/view2.png">
 
         <!--Font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">

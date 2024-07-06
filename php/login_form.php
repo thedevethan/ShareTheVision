@@ -1,6 +1,9 @@
 <?php 
-session_start();
+
+require("session_config.php");
+
 require("include.php");
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["email"]) && isset($_POST["password"])) {
@@ -23,6 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION["id"] = $user["user_id"];
                 $_SESSION["status"] = $user["status"];
                 $_SESSION["autorisation"] = true;
+
+                $cookie_value = session_id();
+                setcookie("session_cookie", $cookie_value, time() + (60 * 60 * 24 * 30), "/");
                 
                 // Redirection après connexion réussie
                 header("Location: php/catalog.php");
@@ -30,7 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             } else {
                 // Les informations d'identification sont incorrectes
                 echo "<script>
-                    $('.login_error').show()
+                    $(document).ready(function() {
+                        $('.login_error').show();
+                    });
                     </script>";
             }
         } catch (PDOException $e) {

@@ -36,7 +36,6 @@ body {
   font-weight: weight;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  overflow-x: hidden;
 }
 
 /*Style de la navbar de la page d'inscription*/
@@ -523,4 +522,4 @@ nav {
   /*Style des normalize*/
 }
 
-/*# sourceMappingURL=essai.css.map */
+/*# sourceMappingURL=style.css.map */
