@@ -1,515 +1,526 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
 button,
 input,
 optgroup,
 select,
 textarea {
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400; /* Utilisez des valeurs spécifiques pour le poids */
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    font-size: 1.25vw;
-    border-radius: 1vw;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Utilisez des valeurs spécifiques pour le poids */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.25vw;
+  border-radius: 1vw;
 }
 
 /* Styles spécifiques pour les placeholders */
 ::placeholder {
-    font-family: "Inconsolata", monospace;
-    font-size: 1.25vw; /* Ajustez la taille selon vos besoins */
-    opacity: 1; /* Assurez-vous que le texte soit entièrement opaque */
+  font-family: "Inconsolata", monospace;
+  font-size: 1.25vw; /* Ajustez la taille selon vos besoins */
+  opacity: 1; /* Assurez-vous que le texte soit entièrement opaque */
 }
 
 /* Styles spécifiques pour iOS */
 @supports (-webkit-touch-callout: none) {
-    ::placeholder {
-        font-size: 1.25vw; /* Ajustez la taille selon vos besoins */
-    }
+  ::placeholder {
+    font-size: 1.25vw; /* Ajustez la taille selon vos besoins */
+  }
 }
-
 body {
-    margin: 0;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    overflow-x: hidden;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  overflow-x: hidden;
 }
 
 /*Style de la navbar de la page d'inscription*/
-
 nav {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
 }
 
 .logo {
-    display: flex;
-    gap: 0.8vw;
+  display: flex;
+  gap: 0.8vw;
 }
 
 .name_site {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
 
 .logo img {
-    margin-top: 1.9vh;
-    height: 2.9vw;
+  margin-top: 1.9vh;
+  height: 2.9vw;
 }
 
 .link {
-    margin-top: 0.8vh;
-    font-size: 1.25vw;
-    gap: 1.7vw;
-    display: flex;
+  margin-top: 0.8vh;
+  font-size: 1.25vw;
+  gap: 1.7vw;
+  display: flex;
 }
 
 .link a {
-    color: white;
-    margin-top: 2.8vh;
+  color: white;
+  margin-top: 2.8vh;
 }
 
 /*Style de la navbar de la page d'inscription*/
-
 /*Style du formulaire de login*/
 .log {
-    font-size: 140%;
-    font-weight: bold;
-    margin: 0;
+  font-size: 140%;
+  font-weight: bold;
+  margin: 0;
 }
 
 .login {
-    padding-top: 3vh;
-    padding-bottom: 5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #000;
-    border-radius: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+  border-radius: 1vw;
 }
 
 .body_login {
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
 }
 
 .log_sign_up {
-    display: flex;
-    gap: 1vw;
-    padding-bottom: 1.5vh;
+  display: flex;
+  gap: 1vw;
+  padding-bottom: 1.5vh;
 }
 
 .log_sign_up a {
-    margin-top: 2.7vh;
-    color: #000;
+  margin-top: 2.7vh;
+  color: #000;
 }
 
 #email, #password {
-    width: 22vw;
-    padding: 2vh;
-    border: 1px solid #000;
-    margin-left: auto;
-    margin-right: auto;
+  width: 22vw;
+  padding: 2vh;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .choice_login {
-    display: flex;
-    justify-content:space-around;
-    gap: 1vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 1vw;
 }
 
 .forgot {
-    color: #000;
-    margin-top: 1.5vh;
+  color: #000;
+  margin-top: 1.5vh;
 }
 
 #forgot:hover {
-    background-color: #ffffffd8;
+  background-color: rgba(255, 255, 255, 0.8470588235);
 }
 
 #sub_login {
-    color: white;
-    background-color: black;
-    border: none;
-    width: 10vw;
-    height: 7vh;
+  color: white;
+  background-color: black;
+  border: none;
+  width: 10vw;
+  height: 7vh;
 }
 
 #sub_login:hover {
-    background-color: #000000d8;
+  background-color: rgba(0, 0, 0, 0.8470588235);
 }
 
 .login_error {
-    color: red;
-    font-size: 1vw;
-    position: absolute;
-    top: 35vh;
-    left: 38.59vw;
+  color: red;
+  font-size: 1vw;
+  position: absolute;
+  top: 35vh;
+  left: 38.59vw;
 }
 
 /*Style du formulaire de login*/
-
 /*Style du formulaire de signup*/
-
 .sign {
-    font-size: 140%;
-    font-weight: bold;
-    margin: 0;
+  font-size: 140%;
+  font-weight: bold;
+  margin: 0;
 }
 
 .signup {
-    padding-top: 3vh;
-    padding-bottom: 5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #000;
-    border-radius: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+  border-radius: 1vw;
 }
 
 .body_signup {
-    display: flex;
-    flex-direction: column;
-    gap: 4vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
 }
 
 .sign_up_log {
-    display: flex;
-    gap: 1vw;
-    padding-bottom: 1.5vh;
+  display: flex;
+  gap: 1vw;
+  padding-bottom: 1.5vh;
 }
 
 .sign_up_log a {
-    margin-top: 2.7vh;
-    color: #000;
+  margin-top: 2.7vh;
+  color: #000;
 }
 
 #username, #confirm_password {
-    width: 22vw;
-    padding: 2vh;
-    border: 1px solid #000;
+  width: 22vw;
+  padding: 2vh;
+  border: 1px solid #000;
 }
 
 #sub_signup {
-    color: white;
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3vh;
-    border: none;
-    width: 12vw;
-    height: 8vh;
+  color: white;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  border: none;
+  width: 12vw;
+  height: 8vh;
 }
 
 #sub_signup:hover {
-    background-color: #000000d8;
+  background-color: rgba(0, 0, 0, 0.8470588235);
 }
 
 .dev_choice {
-    display: flex;
+  display: flex;
 }
 
 .status {
-    margin-top: 2.9vh;
+  margin-top: 2.9vh;
 }
 
 #info_dev {
-    margin-top: 2vh;
-    padding: 0;
-    color: red;
-    font-size: 1vw;
-    
+  margin-top: 2vh;
+  padding: 0;
+  color: red;
+  font-size: 1vw;
 }
 
 .dev_choice {
-    margin-top: -4vh;
+  margin-top: -4vh;
 }
 
 /*Style du formulaire de signup*/
-
 /*Style du menu du catalog*/
-
 .user {
-    margin-top: 1.9vh;
+  margin-top: 1.7vh;
+  height: 3vw;
 }
 
 .menu {
-    background-color: rgb(25, 24, 24);
-    position: absolute;
-    width: 17vw;
-    top: 0;
-    right: -18vw;
-    border-radius: 2vw 0vw 0vw 2vw;
-    border: 1px solid #ffffff;
+  background-color: rgb(25, 24, 24);
+  position: absolute;
+  width: 17vw;
+  top: 0;
+  right: -18vw;
+  border-radius: 2vw 0vw 0vw 2vw;
+  border: 1px solid #ffffff;
 }
 
 .headermenu {
-    display: flex;
-    padding-left: 0.2vw;
-    padding-right: 0.2vw;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2.22vh;
-    padding-bottom: 2.22vh;
-    border-radius: 2vw 0vw 0vw 0vw;
-    border-bottom: 1px solid #ffffff;
+  display: flex;
+  padding-left: 0.2vw;
+  padding-right: 0.2vw;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.22vh;
+  padding-bottom: 2.22vh;
+  border-radius: 2vw 0vw 0vw 0vw;
+  border-bottom: 1px solid #ffffff;
 }
 
 .headermenu img {
-    padding: 0.2vw;
-    margin-top: auto;
-    margin-bottom: auto;
+  height: 1.5vw;
+  padding: 0.2vw;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .usernamemenu {
-    display: flex;
-    gap: 0.3vw;
-    justify-content: space-between;
+  display: flex;
+  gap: 0.3vw;
+  justify-content: space-between;
+}
+
+.usernamemenu img {
+  height: 3vw;
 }
 
 .usernamemenu p {
-    color: #ffffff;
+  color: #ffffff;
+  font-size: 1.25vw;
 }
 
 .close {
-    padding: 0.2vw;
-    border-radius: 0.3vw;
+  padding: 0.2vw;
+  border-radius: 0.3vw;
 }
 
 .close:hover {
-    background-color: #ffffff78;
-} 
+  background-color: rgba(255, 255, 255, 0.4705882353);
+}
 
 .menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 2vw;
-    gap: 4vh;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    padding: 0;
-    list-style-type: none;
+  font-size: 1.25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 2vw;
+  gap: 4vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  padding: 0;
+  list-style-type: none;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 0.2vw;
-    border-radius: 0.3vw;
+  text-decoration: none;
+  color: white;
+  padding: 0.2vw;
+  border-radius: 0.3vw;
 }
 
 .menu ul li a:hover {
-    background-color: #ffffff56;
+  background-color: rgba(255, 255, 255, 0.337254902);
 }
 
 /*Style du menu du catalog*/
-
-
 @media only screen and (max-width: 599px) {
-    /*Style de la navbar de la page d'inscription*/
-    nav {
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-top: 0.05vh;
-        padding-bottom: 1.8vh;
-    }
-    
-    .logo {
-        gap: 1vw;
-    }
-
-    .name_site {
-        display: none;
-    }
-    
-    .logo img {
-        margin-top: 1.3vh;
-        height: 8vh;
-    }
-    
-    .link {
-        margin-top: 0.4vh;
-        gap: 0vh;
-        font-size: 4vw;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .link a {
-        margin-top: 0vh;
-    }
-    /*Style de la navbar de la page d'inscription*/
-
-    /*Style du formulaire de login*/
-    .log {
-        font-size: 140%;
-    }
-
-    .login {
-        padding-top: 4vh;
-        padding-bottom: 5vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        margin-top: 10vh;
-        width: 75vw;
-        border-radius: 3vw;
-    }
-
-    .body_login {
-        gap: 3vh;
-
-    }
-
-    .log_sign_up {
-        gap: 0vw;
-        padding-bottom: 3vh;
-        flex-direction: column;
-    }
-
-    .log_sign_up a {
-        margin-top: 0vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #email, #password {
-        width: 53vw;
-        padding: 1.5vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .forgot {
-        font-size: 4vw;
-        margin-top: 0.3vh;
-        width: 25vw;
-        text-align: center;
-    }
-
-    #sub_login {
-        width: 28vw;
-        height: 6vh;
-        padding: 0;
-    }
-
-    .choice_login {
-        gap: 0vw;
-    }
-
-/*Style du formulaire de login*/
-
-/*Style du formulaire de signup*/
-
-    .signup {
-        padding-top: 4vh;
-        padding-bottom: 5vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        margin-top: 10vh;
-        width: 75vw;
-        border-radius: 3vw;
-    }
-
-    .body_signup {
-        gap: 3vh;
-    }
-
-    .sign_up_log {
-        flex-direction: column;
-        gap: 0vw;
-        padding-bottom: 3vh;
-    }
-
-    .sign_up_log a {
-        margin-top: 0vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #username, #confirm_password {
-        width: 53vw;
-        padding: 1.5vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #sub_signup {
-        width: 35vw;
-        height: 5vh;
-        padding: 0;
-        margin-top: 1vh;
-    }
-
-    
-    .status {
-        margin-top: 2.2vh;
-    }
-    
-    #info_dev {
-        margin-top: 1vh;
-        margin-bottom: 0.2vh;
-        padding: 0;
-        color: red;
-        font-size: 2.5vw;
-        
-    }
-    
-    .dev_choice {
-        margin-top: -2vh;
-    }
-
-/*Style du formulaire de signup*/
-
-/*Style des normalize*/
-
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-        font-size: 4vw;
-        border-radius: 3vw;
-    }
-
-    /* Styles spécifiques pour les placeholders */
+  /*Style de la navbar de la page d'inscription*/
+  nav {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.05vh;
+    padding-bottom: 1.8vh;
+  }
+  .logo {
+    gap: 1vw;
+  }
+  .name_site {
+    display: none;
+  }
+  .logo img {
+    margin-top: 1.3vh;
+    height: 16vw;
+  }
+  .link {
+    margin-top: 0.4vh;
+    gap: 0vh;
+    font-size: 4vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link a {
+    margin-top: 0vh;
+  }
+  /*Style de la navbar de la page d'inscription*/
+  /*Style du formulaire de login*/
+  .log {
+    font-size: 140%;
+  }
+  .login {
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 10vh;
+    width: 75vw;
+    border-radius: 3vw;
+  }
+  .body_login {
+    gap: 3vh;
+  }
+  .log_sign_up {
+    gap: 0vw;
+    padding-bottom: 3vh;
+    flex-direction: column;
+  }
+  .log_sign_up a {
+    margin-top: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #email, #password {
+    width: 53vw;
+    padding: 1.5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .forgot {
+    font-size: 4vw;
+    margin-top: 0.3vh;
+    width: 25vw;
+    text-align: center;
+  }
+  #sub_login {
+    width: 28vw;
+    height: 6vh;
+    padding: 0;
+  }
+  .choice_login {
+    gap: 0vw;
+  }
+  /*Style du formulaire de login*/
+  /*Style du formulaire de signup*/
+  .signup {
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 10vh;
+    width: 75vw;
+    border-radius: 3vw;
+  }
+  .body_signup {
+    gap: 3vh;
+  }
+  .sign_up_log {
+    flex-direction: column;
+    gap: 0vw;
+    padding-bottom: 3vh;
+  }
+  .sign_up_log a {
+    margin-top: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #username, #confirm_password {
+    width: 53vw;
+    padding: 1.5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #sub_signup {
+    width: 35vw;
+    height: 5vh;
+    padding: 0;
+    margin-top: 1vh;
+  }
+  .status {
+    margin-top: 2.2vh;
+  }
+  #info_dev {
+    margin-top: 1vh;
+    margin-bottom: 0.2vh;
+    padding: 0;
+    color: red;
+    font-size: 2.5vw;
+  }
+  .dev_choice {
+    margin-top: -2vh;
+  }
+  /*Style du formulaire de signup*/
+  /*Style du menu du catalog*/
+  .user {
+    margin-top: 2.5vh;
+    height: 12vw;
+  }
+  .menu {
+    width: 50vw;
+    top: 0;
+    right: -51vw;
+    border-radius: 5vw 0vw 0vw 5vw;
+  }
+  .headermenu {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 2.1vh;
+    padding-bottom: 2.1vh;
+    border-radius: 5vw 0vw 0vw 0vw;
+    border-bottom: 1px solid #ffffff;
+  }
+  .headermenu img {
+    height: 5vw;
+    padding: 1vw;
+  }
+  .usernamemenu {
+    gap: 1vw;
+  }
+  .usernamemenu img {
+    height: 12vw;
+  }
+  .usernamemenu p {
+    font-size: 4vw;
+  }
+  .close {
+    padding: 1vw;
+    border-radius: 5vw;
+  }
+  .menu ul {
+    font-size: 4vw;
+    margin-left: 4vw;
+    gap: 4.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .menu ul li a {
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+  /*Style du menu du catalog*/
+  /*Style des normalize*/
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-size: 4vw;
+    border-radius: 3vw;
+  }
+  /* Styles spécifiques pour les placeholders */
+  ::placeholder {
+    font-size: 4vw; /* Ajustez la taille selon vos besoins */
+  }
+  /* Styles spécifiques pour iOS */
+  @supports (-webkit-touch-callout: none) {
     ::placeholder {
-        font-size: 4vw; /* Ajustez la taille selon vos besoins */
+      font-size: 4vw; /* Ajustez la taille selon vos besoins */
     }
-
-    /* Styles spécifiques pour iOS */
-    @supports (-webkit-touch-callout: none) {
-        ::placeholder {
-            font-size: 4vw; /* Ajustez la taille selon vos besoins */
-        }
-    }
-
-/*Style des normalize*/
-
+  }
+  /*Style des normalize*/
 }
+
+/*# sourceMappingURL=essai.css.map */
