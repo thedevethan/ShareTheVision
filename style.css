@@ -458,16 +458,16 @@ nav {
     height: 12vw;
   }
   .menu {
-    width: 50vw;
+    width: 53vw;
     top: 0;
-    right: -51vw;
+    right: -54vw;
     border-radius: 5vw 0vw 0vw 5vw;
   }
   .headermenu {
     padding-left: 1vw;
     padding-right: 1vw;
-    padding-top: 2.1vh;
-    padding-bottom: 2.1vh;
+    padding-top: 1.95vh;
+    padding-bottom: 1.95vh;
     border-radius: 5vw 0vw 0vw 0vw;
     border-bottom: 1px solid #ffffff;
   }
