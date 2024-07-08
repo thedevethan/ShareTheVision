@@ -7,17 +7,25 @@ function nav_subscribe($text, $sign_log, $link, $img)
 {
 ?>
     <nav>
-        
+
         <div class="logo">
             <img <?php echo $img; ?> alt="eye_logo">
             <p class="name_site">ShareTheVision</p>
         </div>
-        
+
+        <script>
+            $(document).ready(function() {
+                $(".logo img").click(function() {
+                    location.reload();
+                });
+            });
+        </script>
+
         <div class="link">
             <p>
                 <?php echo $text; ?>
             </p>
-            <a <?php echo $link; ?> >
+            <a <?php echo $link; ?>>
                 <?php echo $sign_log; ?>
             </a>
         </div>

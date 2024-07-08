@@ -109,7 +109,7 @@ nav {
 .log_sign_up {
   display: flex;
   gap: 1vw;
-  padding-bottom: 1.5vh;
+  padding-bottom: 0vh;
 }
 
 .log_sign_up a {
@@ -155,9 +155,10 @@ nav {
 .login_error {
   color: red;
   font-size: 1vw;
-  position: absolute;
-  top: 35vh;
-  left: 38.59vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 6.5vw;
+  padding: 0;
 }
 
 /*Style du formulaire de login*/
@@ -369,12 +370,19 @@ nav {
     width: 75vw;
     border-radius: 3vw;
   }
+  .login_error {
+    font-size: 2.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 14vw;
+    padding: 0;
+  }
   .body_login {
     gap: 3vh;
   }
   .log_sign_up {
     gap: 0vw;
-    padding-bottom: 3vh;
+    padding-bottom: 1.5vh;
     flex-direction: column;
   }
   .log_sign_up a {
