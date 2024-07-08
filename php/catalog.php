@@ -1,13 +1,10 @@
 <?php
-
-
-
 require("session_config.php");
 
 if ($_SESSION["autorisation"] != true)
 {
     header("Location:../index.php");
-    exit();  // Quitte le script si l'utilisateur n'est pas connecté.
+    exit();  #Quitte le script si l'utilisateur n'est pas connecté.
 }
 
 require("header.php");

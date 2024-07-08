@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
 
 function hd($style)
 {
 ?>
+    <!DOCTYPE html>
+    <html lang="en">
 
     <head>
         <!--Encodage-->

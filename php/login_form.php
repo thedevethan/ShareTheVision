@@ -1,4 +1,5 @@
-<?php 
+<?php
+ob_start();
 
 require("session_config.php");
 
@@ -16,25 +17,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(':email', $_POST["email"]);
             $stmt->execute();
             
-            $user = $stmt->fetch(PDO::FETCH_ASSOC);    // User deviendra alors un tableau associatif
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);    #User deviendra alors un tableau associatif
             
             if ($user && password_verify($_POST["password"], $user["password"])) {
                 
-                // Les informations d'identification sont correctes
+                #Les informations d'identification sont correctes
                 $_SESSION["username"] = $user["username"];
                 $_SESSION["email"] = $user["email"];
                 $_SESSION["id"] = $user["user_id"];
                 $_SESSION["status"] = $user["status"];
                 $_SESSION["autorisation"] = true;
-
+                
                 $cookie_value = session_id();
                 setcookie("session_cookie", $cookie_value, time() + (60 * 60 * 24 * 30), "/");
                 
-                // Redirection après connexion réussie
+                #Redirection après connexion réussie
                 header("Location: php/catalog.php");
                 exit();
-            } else {
-                // Les informations d'identification sont incorrectes
+
+            } 
+            else {
+                #Les informations d'identification sont incorrectes
                 echo "<script>
                     $(document).ready(function() {
                         $('.login_error').show();
@@ -48,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-
+ob_end_flush();
 ?>
 
 <p class="login_error">

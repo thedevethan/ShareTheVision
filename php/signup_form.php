@@ -1,7 +1,5 @@
-<!--header-->
 <?php
-
-
+ob_start();
 
 require("session_config.php");
 
@@ -19,8 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
             $stmt = $conn->prepare("INSERT INTO user (email, password, username, status) VALUES (:email, :password, :username, :status)");
+            
+            $phash = password_hash($_POST["password"], PASSWORD_DEFAULT);
             $stmt->bindParam(':email', $_POST["email"]);
-            $stmt->bindParam(':password', password_hash($_POST["password"], PASSWORD_DEFAULT));
+            $stmt->bindParam(':password', $phash);
             $stmt->bindParam(":username", $_POST["username"]);
             $stmt->bindParam(":status", $_POST["dev"]);
             
@@ -36,9 +36,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conn = null;
     }
 }
+ob_end_flush();
 ?>
 
 <body>
+    
     <!--navbar de la page du signup-->
     <?php
     require("navbar_login.php");
