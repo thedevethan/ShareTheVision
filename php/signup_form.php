@@ -139,7 +139,9 @@ ob_end_flush();
                 $(".error_password, .error_email").css("visibility", "hidden")
             </script>
         </div>
-        <p id="info_dev">Seuls les développeurs peuvent publier des logiciels.</p>
+
+        <p id="info_dev">*</p>
+
         <div class="dev_choice">
 
             <p class="label_dev">Développeur:</p>
@@ -158,13 +160,15 @@ ob_end_flush();
 
             $("#non").click(
                 function() {
+                    $("#info_dev").text("Vous ne pourrez que télécharger des logiciels.");
                     $("#info_dev").css("visibility", "visible");
                 }
             )
 
             $("#oui").click(
                 function() {
-                    $("#info_dev").css("visibility", "hidden");
+                    $("#info_dev").text("Vous serez autorisés à publier des logiciels.");
+                    $("#info_dev").css("visibility", "visible");
                 }
             )
         </script>
