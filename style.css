@@ -13,6 +13,13 @@ textarea {
   font-size: 1.25vw;
   border-radius: 1vw;
 }
+button:focus,
+input:focus,
+optgroup:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
 
 /* Styles spécifiques pour les placeholders */
 ::placeholder {
@@ -243,6 +250,24 @@ nav {
   margin-top: -4vh;
 }
 
+#password, #confirm_password {
+  border: none;
+  width: 18.5vw;
+}
+
+.password_container {
+  background-color: rgb(255, 255, 255);
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  border: 1px solid #000;
+  border-radius: 1vw;
+}
+.password_container img {
+  height: 1.7vw;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
 .error_email {
   color: red;
   font-size: 1vw;
@@ -383,7 +408,7 @@ nav {
     padding-left: 1vw;
     padding-right: 1vw;
     margin-top: 10vh;
-    width: 75vw;
+    width: 78vw;
     border-radius: 3vw;
   }
   .login_error {
@@ -412,6 +437,9 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
+  #email {
+    width: 60vw;
+  }
   .forgot {
     font-size: 4vw;
     margin-top: 0.3vh;
@@ -434,7 +462,7 @@ nav {
     padding-left: 1vw;
     padding-right: 1vw;
     margin-top: 10vh;
-    width: 75vw;
+    width: 78vw;
     border-radius: 3vw;
   }
   .body_signup {
@@ -456,6 +484,9 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
+  #username {
+    width: 60vw;
+  }
   #sub_signup {
     width: 35vw;
     height: 5vh;
@@ -474,6 +505,19 @@ nav {
   }
   .dev_choice {
     margin-top: -2vh;
+  }
+  #password, #confirm_password {
+    width: 50vw;
+    padding: 1.5vh;
+  }
+  .password_container {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    border: 1px solid #000;
+    border-radius: 3vw;
+  }
+  .password_container img {
+    height: 4.5vw;
   }
   .error_email {
     font-size: 2.5vw;

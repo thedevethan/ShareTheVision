@@ -35,25 +35,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $(".error_email, .error_password").css("visibility", "visible");
                 });
                 </script>';
-            } 
-            else if ($_POST["password"] != $_POST["confirm_password"])
-            {
+            } else if ($_POST["password"] != $_POST["confirm_password"]) {
                 echo '<script>
                 $(document).ready(function() {
                     $(".error_password").css("visibility", "visible");
                 });
                 </script>';
-            }
-            else if ($count > 0)
-            {
+            } else if ($count > 0) {
                 echo '<script>
                 $(document).ready(function() {
                     $(".error_email").css("visibility", "visible");
                 });
                 </script>';
-            }
-            else 
-            {
+            } else {
                 $stmt = $conn->prepare("INSERT INTO user (email, password, username, status) VALUES (:email, :password, :username, :status)");
 
                 $phash = password_hash($_POST["password"], PASSWORD_DEFAULT);
@@ -61,14 +55,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmt->bindParam(':password', $phash);
                 $stmt->bindParam(":username", $_POST["username"]);
                 $stmt->bindParam(":status", $_POST["dev"]);
-    
+
                 $stmt->execute();
-    
+
                 header("Location: ../index.php");
-    
+
                 exit();
             }
-
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
@@ -111,7 +104,12 @@ ob_end_flush();
             </div>
 
             <input type="email" name="email" id="email" placeholder="email" maxlength="255" required>
-            <input type="password" name="password" id="password" placeholder="mot de passe" maxlength="255" required>
+
+            <div class="password_container">
+                <input type="password" name="password" id="password" placeholder="mot de passe" maxlength="255" required>
+
+                <img src="../image/show.png" alt="show" id="im1">
+            </div>
 
             <div class="error_password">
                 <p>
@@ -119,8 +117,24 @@ ob_end_flush();
                 </p>
             </div>
 
-            <input type="password" name="confirm_password" id="confirm_password" placeholder="confirmer le mot de passe" maxlength="255" required>
+            <div class="password_container">
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="confirmer le mot de passe" maxlength="255" required>
 
+                <img src="../image/show.png" alt="show" id="im2">
+            </div>
+
+            <!--Fonction qui permet de cacher le mot de passe lors du click sur l'icône-->
+            <?php 
+            require("hide_password.php");
+            echo '<script>
+            $(document).ready(function() {
+                hide_password("#im1", "#password", "../");
+                hide_password("#im2", "#confirm_password", "../");
+            });
+            </script>';
+            ?>
+
+            <!--Permet de cacher par défaut les messages d'erreurs-->
             <script>
                 $(".error_password, .error_email").css("visibility", "hidden")
             </script>

@@ -72,7 +72,22 @@ ob_end_flush();
 
     <div class="body_login">
         <input type="email" name="email" id="email" placeholder="email" maxlength="255" required>
-        <input type="password" name="password" id="password" placeholder="mot de passe" maxlength="255" required>
+
+        <div class="password_container">
+                <input type="password" name="password" id="password" placeholder="mot de passe" maxlength="255" required>
+
+                <img src="image/show.png" alt="show" id="im3">
+            </div>
+
+        <!--Fonction qui permet de cacher le mot de passe lors du click sur l'icône-->
+        <?php 
+            require("hide_password.php");
+            echo '<script>
+            $(document).ready(function() {
+                hide_password("#im3", "#password", "");
+            });
+            </script>';
+            ?>
 
         <div class="choice_login">
             <a href="#" class="forgot">
