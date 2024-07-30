@@ -1,8 +1,7 @@
 <?php
 require("session_config.php");
 
-if ($_SESSION["autorisation"] != true)
-{
+if ($_SESSION["autorisation"] != true) {
     header("Location:../index.php");
     exit();  #Quitte le script si l'utilisateur n'est pas connecté.
 }
@@ -21,7 +20,7 @@ hd("href = ../style.css");
         </div>
 
 
-        <img class="user" src="../image/user.png" alt="user" >
+        <img class="user" src="../image/user.png" alt="user">
 
     </nav>
 
@@ -29,14 +28,14 @@ hd("href = ../style.css");
         <div class="headermenu">
 
             <div class="usernamemenu">
-                <img class="user" src="../image/user.png" alt="user" >
+                <img class="user" src="../image/user.png" alt="user">
                 <p>
-                    <?php 
+                    <?php
                     echo $_SESSION["username"];
                     ?>
                 </p>
             </div>
-            <img class="close" src="../image/close.png" alt="close" >
+            <img class="close" src="../image/close.png" alt="close">
         </div>
 
         <ul>
@@ -47,14 +46,27 @@ hd("href = ../style.css");
         </ul>
     </div>
 
+
     <script>
-        $(".user").click(function() {
-            $(".menu").show();
-            $(".menu").animate({right: '0'}, 100);
-        });
-        $(".close").click(function() {
-            $(".menu").animate({right: '-18vw'}, 100);
-            $(".menu").hide(100);
+        // Script pour le clic sur le logo, rechargement de la page
+        $(document).ready(function() {
+            $(".logo img").click(function() {
+                location.reload();
+            });
+
+            $(".user").click(function() {
+                $(".menu").show();
+                $(".menu").animate({
+                    right: '0'
+                }, 100);
+            });
+
+            $(".close").click(function() {
+                $(".menu").animate({
+                    right: '-21vw'
+                }, 100);
+                $(".menu").hide(100);
+            });
         });
     </script>
 </body>
