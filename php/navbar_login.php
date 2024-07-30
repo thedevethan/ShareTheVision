@@ -3,7 +3,7 @@ ob_start();
 
 require("session_config.php");
 
-function nav_subscribe($text, $sign_log, $link, $img)
+function nav_subscribe($text, $sign_log, $link, $img)    // La fonction permet de créer la barre de navigation 
 {
 ?>
     <nav>
@@ -14,12 +14,15 @@ function nav_subscribe($text, $sign_log, $link, $img)
         </div>
 
         <script>
+            // Script pour le clic sur le logo, rechargement de la page
             $(document).ready(function() {
                 $(".logo img").click(function() {
                     location.reload();
                 });
             });
         </script>
+
+        
 
         <div class="link">
             <p>

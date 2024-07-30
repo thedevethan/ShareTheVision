@@ -36,6 +36,7 @@ textarea:focus {
 }
 body {
   margin: 0;
+  font-size: 1.39vw;
   background-color: #ffffff;
   font-family: Arial, sans-serif;
   font-family: "Inconsolata", monospace;
@@ -44,6 +45,10 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+body p {
+  margin: 0;
+  padding: 0;
+}
 
 /*Style de la navbar de la page d'inscription*/
 nav {
@@ -51,36 +56,34 @@ nav {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
+  padding: 1.5vh 2vw;
 }
 
 .logo {
   display: flex;
-  gap: 0.8vw;
+  gap: 0.5vw;
 }
 
 .name_site {
-  font-size: 1.5vw;
+  margin: auto 0;
+  font-weight: bold;
+  font-size: 1.7vw;
 }
 
 .logo img {
-  margin-top: 1.9vh;
-  height: 2.9vw;
+  margin: auto 0;
+  height: 4vw;
 }
 
 .link {
-  margin-top: 0.8vh;
-  font-size: 1.25vw;
+  margin: auto 0;
   gap: 1.7vw;
   display: flex;
 }
 
 .link a {
+  margin: auto 0;
   color: white;
-  margin-top: 2.8vh;
 }
 
 /*Style de la navbar de la page d'inscription*/
@@ -233,10 +236,12 @@ nav {
 
 .dev_choice {
   display: flex;
+  flex-direction: row;
 }
 
 .status {
-  margin-top: 2.5vh;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #info_dev {
@@ -287,7 +292,7 @@ nav {
 /*Style du formulaire de signup*/
 /*Style du menu du catalog*/
 .user {
-  margin-top: 1.7vh;
+  margin: auto 0;
   height: 3vw;
 }
 
@@ -370,32 +375,24 @@ nav {
 
 /*Style du menu du catalog*/
 @media only screen and (max-width: 599px) {
+  /*Style du body*/
+  body {
+    font-size: 4vw;
+  }
   /*Style de la navbar de la page d'inscription*/
   nav {
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 0.05vh;
-    padding-bottom: 1.8vh;
-  }
-  .logo {
-    gap: 1vw;
+    padding: 1vh 3vw;
   }
   .name_site {
     display: none;
   }
   .logo img {
-    margin-top: 1.3vh;
     height: 16vw;
   }
   .link {
-    margin-top: 0.4vh;
-    gap: 0vh;
-    font-size: 4vw;
+    gap: 1.5vh;
     flex-direction: column;
     align-items: center;
-  }
-  .link a {
-    margin-top: 0vh;
   }
   /*Style de la navbar de la page d'inscription*/
   /*Style du formulaire de login*/
@@ -493,9 +490,6 @@ nav {
     padding: 0;
     margin-top: 1vh;
   }
-  .status {
-    margin-top: 2vh;
-  }
   #info_dev {
     margin-top: 1vh;
     margin-bottom: 0.2vh;
@@ -534,7 +528,6 @@ nav {
   /*Style du formulaire de signup*/
   /*Style du menu du catalog*/
   .user {
-    margin-top: 2.5vh;
     height: 12vw;
   }
   .menu {
@@ -600,6 +593,39 @@ nav {
     }
   }
   /*Style des normalize*/
+}
+/*Médias queries pour les tablettes*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /*Style du body*/
+  body {
+    font-size: 2vw;
+  }
+  /*Style des normalize*/
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-size: 2vw;
+  }
+  /* Styles spécifiques pour les placeholders */
+  ::placeholder {
+    font-size: 2vw; /* Ajustez la taille selon vos besoins */
+  }
+  /* Styles spécifiques pour iOS */
+  @supports (-webkit-touch-callout: none) {
+    ::placeholder {
+      font-size: 2vw; /* Ajustez la taille selon vos besoins */
+    }
+  }
+  /*Style des normalize*/
+  /*Style de la navbar de la page d'inscription*/
+  .name_site {
+    font-size: 2.5vw;
+  }
+  .logo {
+    gap: 1vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

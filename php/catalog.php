@@ -20,9 +20,9 @@ hd("href = ../style.css");
             <p class="name_site">ShareTheVision</p>
         </div>
 
-        <div class="account">
-            <img class="user" src="../image/user.png" alt="user" >
-        </div>
+
+        <img class="user" src="../image/user.png" alt="user" >
+
     </nav>
 
     <div class="menu">
@@ -48,7 +48,7 @@ hd("href = ../style.css");
     </div>
 
     <script>
-        $(".account").click(function() {
+        $(".user").click(function() {
             $(".menu").show();
             $(".menu").animate({right: '0'}, 100);
         });

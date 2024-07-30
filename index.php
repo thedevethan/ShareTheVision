@@ -1,5 +1,5 @@
 <?php
-ob_start();
+ob_start();    // La fonction servira a échapper le contenu html pour évter l'envoie d'en tetes
 
 require("php/session_config.php");
 

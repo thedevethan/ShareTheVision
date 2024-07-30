@@ -1,5 +1,6 @@
 <script>
-    function hide_password(selector, cible, path) {
+    function hide_password(selector, cible, path)    // La fonction servira a rendre le mot de passe visible ou invisible
+    {
 
         var inputType = $('#password').attr('type')
 
