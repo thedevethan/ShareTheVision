@@ -310,7 +310,7 @@ nav {
   top: 0;
   right: -21vw;
   border-radius: 2vw 0vw 0vw 2vw;
-  border: 1px solid #ffffff;
+  border-right: 1px solid rgb(25, 24, 24);
 }
 
 .headermenu {
@@ -319,6 +319,8 @@ nav {
   align-items: center;
   border-radius: 2vw 0vw 0vw 0vw;
   border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
   padding: 2.45vh 0.5vw;
 }
 .headermenu img {
@@ -538,8 +540,8 @@ nav {
   .headermenu {
     padding-left: 1vw;
     padding-right: 1vw;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+    padding-top: 1.4vh;
+    padding-bottom: 1.4vh;
     border-radius: 5vw 0vw 0vw 0vw;
     border-bottom: 1px solid #ffffff;
   }
@@ -621,6 +623,31 @@ nav {
   }
   .logo {
     gap: 1vw;
+  }
+  nav {
+    padding: 3vh 2vw;
+  }
+  .logo img {
+    height: 6vw;
+  }
+  .user {
+    height: 6vw;
+  }
+  /*Style du menu*/
+  .menu {
+    width: 27vw;
+  }
+  .headermenu {
+    padding: 2.7vh 0.5vw;
+  }
+  .headermenu img {
+    height: 2vw;
+  }
+  .usernamemenu img {
+    height: 6vw;
+  }
+  .menu ul {
+    gap: 5vh;
   }
 }
 
