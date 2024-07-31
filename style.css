@@ -57,8 +57,21 @@ body p {
 }
 
 /*Style de la navbar de la page d'inscription*/
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 nav {
-  background-color: black;
+  background: linear-gradient(45deg, #000000, #333333, #000000, #565656, #000000);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
   color: white;
   display: flex;
   justify-content: space-between;
