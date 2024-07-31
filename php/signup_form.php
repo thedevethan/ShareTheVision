@@ -51,16 +51,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmt = $conn->prepare("INSERT INTO user (email, password, username, status) VALUES (:email, :password, :username, :status)");
 
                 $phash = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
                 $stmt->bindParam(':email', $_POST["email"]);
                 $stmt->bindParam(':password', $phash);
                 $stmt->bindParam(":username", $_POST["username"]);
                 $stmt->bindParam(":status", $_POST["dev"]);
 
                 $stmt->execute();
-
-                header("Location: ../index.php");
-
-                exit();
+                
+                // Redircetion vers la page catalog
+                require("var_connexion.php");
+                request_session($conn);
+                connexion_session("");
             }
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
@@ -95,7 +97,7 @@ ob_end_flush();
 
         <div class="body_signup">
 
-            <input type="text" name="username" id="username" placeholder="nom d'utilisateur" maxlength="15" required>
+            <input type="text" name="username" id="username" placeholder="nom d'utilisateur" maxlength="19" required>
 
             <div class="error_email">
                 <p>
