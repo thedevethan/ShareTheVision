@@ -2,6 +2,13 @@
 
 function hd($style)
 {
+
+    // Définir le fuseau horaire (facultatif)
+    date_default_timezone_set('Europe/Paris');
+
+    // Obtenir la date et l'heure actuelles
+    $current_date_time = date('Ymd_His');
+
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -14,7 +21,7 @@ function hd($style)
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--Style-->
-        <link rel="stylesheet" <?php echo $style; ?>>
+        <link rel="stylesheet" href="<?php echo $style . "style.css" . '?v=' . $current_date_time; ?>">
         <link rel="icon" href="image/view2.png">
 
         <!--Font-->
