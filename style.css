@@ -26,6 +26,16 @@ textarea:focus {
   outline: none;
 }
 
+input[type=submit] {
+  padding: 0; /* Supprimer tout padding par défaut */
+  display: flex; /* Utiliser flexbox pour centrer le contenu */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  text-align: center; /* Centrer le texte */
+  border: none; /* Supprimer la bordure par défaut */
+  cursor: pointer; /* Changer le curseur au survol */
+}
+
 /* Styles spécifiques pour les placeholders */
 ::placeholder {
   font-family: "Inconsolata", monospace;
@@ -177,11 +187,6 @@ nav {
   border: none;
   width: 10vw;
   height: 7vh;
-  padding: 0; /* Supprimer tout padding par défaut */
-  display: flex; /* Utiliser flexbox pour centrer le contenu */
-  justify-content: center; /* Centrer horizontalement */
-  align-items: center; /* Centrer verticalement */
-  text-align: center; /* Centrer le texte */
 }
 
 #sub_login:hover {
@@ -200,21 +205,17 @@ nav {
 /*Style du formulaire de login*/
 /*Style du formulaire de signup*/
 .sign {
-  font-size: 140%;
+  font-size: 2vw;
   font-weight: bold;
-  margin: 0;
 }
 
 .signup {
-  padding-top: 3vh;
-  padding-bottom: 5vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin: 10vh 0;
+  padding: 7vh 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 4vh;
   width: 30vw;
   margin-left: auto;
   margin-right: auto;
@@ -231,11 +232,8 @@ nav {
 .sign_up_log {
   display: flex;
   gap: 1vw;
-  padding-bottom: 1.5vh;
 }
-
 .sign_up_log a {
-  margin-top: 2.7vh;
   color: #000;
 }
 
@@ -245,19 +243,20 @@ nav {
   border: 1px solid #000;
 }
 
-#sub_signup {
-  color: white;
-  background-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3vh;
-  border: none;
-  width: 12vw;
-  height: 8vh;
+#username {
+  padding-bottom: 2vh;
+  width: 22.8vw;
 }
 
-#sub_signup:hover {
-  background-color: rgba(0, 0, 0, 0.8470588235);
+#sub_signup {
+  box-shadow: 0 0 0.75vw rgba(0, 0, 0, 0.5);
+  color: white;
+  background: linear-gradient(45deg, #000000, #333333, #000000, #565656, #000000);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  border: none;
+  width: 12vw;
+  height: 7vh;
 }
 
 .dev_choice {
@@ -271,14 +270,10 @@ nav {
 }
 
 #info_dev {
-  margin-top: 2vh;
-  padding: 0;
   color: red;
   font-size: 1vw;
-}
-
-.dev_choice {
-  margin-top: -4vh;
+  margin-top: -2vh;
+  margin-bottom: -3vh;
 }
 
 #password, #confirm_password {
@@ -302,16 +297,16 @@ nav {
 .error_email {
   color: red;
   font-size: 1vw;
-  margin-top: -4vh;
-  margin-bottom: -6vh;
+  margin-top: -2.2vh;
+  margin-bottom: -4vh;
   margin-left: 0.5vw;
 }
 
 .error_password {
   color: red;
   font-size: 1vw;
-  margin-top: -4vh;
-  margin-bottom: -6vh;
+  margin-top: -2.2vh;
+  margin-bottom: -4vh;
   margin-left: 0.5vw;
 }
 
@@ -462,27 +457,23 @@ nav {
   }
   /*Style du formulaire de login*/
   /*Style du formulaire de signup*/
+  .sign {
+    font-size: 6vw;
+  }
   .signup {
-    padding-top: 4vh;
-    padding-bottom: 5vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding: 4vh 1vw;
     margin-top: 10vh;
     width: 78vw;
     border-radius: 3vw;
+    gap: 2.5vh;
   }
   .body_signup {
     gap: 3vh;
   }
   .sign_up_log {
+    text-align: center;
+    gap: 1vh;
     flex-direction: column;
-    gap: 0vw;
-    padding-bottom: 3vh;
-  }
-  .sign_up_log a {
-    margin-top: 0vh;
-    margin-left: auto;
-    margin-right: auto;
   }
   #username, #confirm_password {
     width: 53vw;
@@ -494,20 +485,13 @@ nav {
     width: 60vw;
   }
   #sub_signup {
-    width: 35vw;
-    height: 5vh;
-    padding: 0;
-    margin-top: 1vh;
+    width: 37vw;
+    height: 6vh;
   }
   #info_dev {
-    margin-top: 1vh;
-    margin-bottom: 0.2vh;
-    padding: 0;
-    color: red;
+    margin-top: -1.2vh;
+    margin-bottom: -1.7vh;
     font-size: 2.5vw;
-  }
-  .dev_choice {
-    margin-top: -2vh;
   }
   #password, #confirm_password {
     width: 50vw;
@@ -524,15 +508,15 @@ nav {
   }
   .error_email {
     font-size: 2.5vw;
-    margin-top: -2.5vh;
-    margin-bottom: -4vh;
-    margin-left: 2vw;
+    margin-top: -1.2vh;
+    margin-bottom: -3vh;
+    margin-left: 2.5vw;
   }
   .error_password {
     font-size: 2.5vw;
-    margin-top: -2.5vh;
-    margin-bottom: -4vh;
-    margin-left: 2vw;
+    margin-top: -1.2vh;
+    margin-bottom: -3vh;
+    margin-left: 2.5vw;
   }
   /*Style du formulaire de signup*/
   /*Style du menu du catalog*/
@@ -600,8 +584,8 @@ nav {
   }
   /*Style des normalize*/
 }
-/*Médias queries pour les tablettes*/
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+/*Médias queries pour les téléphones en mode paysage*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) and (min-height: 0px) and (max-height: 500px) {
   /*Style du body*/
   body {
     font-size: 2vw;
@@ -668,7 +652,7 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 4vh;
-    width: 30vw;
+    width: 33vw;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #000;
@@ -702,39 +686,30 @@ nav {
     align-items: center;
     gap: 3vh;
   }
-  #forgot:hover {
-    background-color: rgba(255, 255, 255, 0.8470588235);
-  }
   #sub_login {
     width: 15vw;
     height: 10vh;
   }
   .login_error {
-    color: red;
-    font-size: 1vw;
+    font-size: 1.3vw;
     margin-top: -1vh;
     margin-bottom: -4vh;
-    margin-right: 12vw;
-    padding: 0;
+    margin-right: 7vw;
   }
   /*Style du formulaire de login*/
   /*Style du formulaire de signup*/
   .sign {
-    font-size: 140%;
-    font-weight: bold;
-    margin: 0;
+    font-size: 3vw;
+    color: red;
   }
   .signup {
-    padding-top: 3vh;
-    padding-bottom: 5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin: 10vh 0;
+    padding: 7vh 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30vw;
+    gap: 4vh;
+    width: 33vw;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #000;
@@ -747,30 +722,24 @@ nav {
   }
   .sign_up_log {
     display: flex;
-    gap: 1vw;
-    padding-bottom: 1.5vh;
-  }
-  .sign_up_log a {
-    margin-top: 2.7vh;
-    color: #000;
+    flex-direction: column;
+    text-align: center;
+    gap: 1vh;
   }
   #username, #confirm_password {
     width: 22vw;
+    height: 5vh;
     padding: 2vh;
     border: 1px solid #000;
-  }
-  #sub_signup {
-    color: white;
-    background-color: black;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3vh;
-    border: none;
-    width: 12vw;
-    height: 8vh;
   }
-  #sub_signup:hover {
-    background-color: rgba(0, 0, 0, 0.8470588235);
+  #username {
+    width: 27.5vw;
+  }
+  #sub_signup {
+    width: 18vw;
+    height: 10vh;
   }
   .dev_choice {
     display: flex;
@@ -781,13 +750,9 @@ nav {
     margin-bottom: auto;
   }
   #info_dev {
-    margin-top: 2vh;
-    padding: 0;
-    color: red;
-    font-size: 1vw;
-  }
-  .dev_choice {
-    margin-top: -4vh;
+    margin-top: -1vh;
+    margin-bottom: -3vh;
+    font-size: 1.3vw;
   }
   #password, #confirm_password {
     border: none;
@@ -807,19 +772,225 @@ nav {
   }
   .error_email {
     color: red;
-    font-size: 1vw;
-    margin-top: -4vh;
-    margin-bottom: -6vh;
+    font-size: 1.3vw;
+    margin-top: -2vh;
+    margin-bottom: -4vh;
     margin-left: 0.5vw;
   }
   .error_password {
     color: red;
-    font-size: 1vw;
-    margin-top: -4vh;
-    margin-bottom: -6vh;
+    font-size: 1.3vw;
+    margin-top: -2vh;
+    margin-bottom: -4vh;
     margin-left: 0.5vw;
   }
   /*Style du formulaire de signup*/
+}
+/*Médias queries pour les tablettes*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) and (min-height: 501px) {
+  /*Style du normalize*/
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-size: 2.5vw;
+  }
+  /* Styles spécifiques pour les placeholders */
+  ::placeholder {
+    font-family: "Inconsolata", monospace;
+    font-size: 2.5vw; /* Ajustez la taille selon vos besoins */
+    opacity: 1; /* Assurez-vous que le texte soit entièrement opaque */
+  }
+  /* Styles spécifiques pour iOS */
+  @supports (-webkit-touch-callout: none) {
+    ::placeholder {
+      font-size: 2.5vw; /* Ajustez la taille selon vos besoins */
+    }
+  }
+  /*Style du normalize*/
+  /*Style du body*/
+  body {
+    font-size: 2.5vw;
+  }
+  /*Style du body*/
+  /*Style de la navbar de la page d'inscription*/
+  nav {
+    padding: 3vh 2vw;
+  }
+  .logo {
+    gap: 1vw;
+  }
+  .name_site {
+    font-size: 2.7vw;
+  }
+  .logo img {
+    height: 6vw;
+  }
+  .link {
+    gap: 2vw;
+  }
+  /*Style de la navbar de la page d'inscription*/
+  /*Style du formulaire de login*/
+  .log {
+    font-size: 3.5vw;
+  }
+  .login {
+    margin: 10vh 0;
+    padding: 4vh 5vw;
+    gap: 4vh;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
+    border-radius: 1vw;
+  }
+  .body_login {
+    gap: 4vh;
+  }
+  .log_sign_up {
+    display: flex;
+    gap: 3vw;
+  }
+  #email, #password {
+    width: 37vw;
+    padding: 1.5vh;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #email {
+    width: 42vw;
+  }
+  .choice_login {
+    gap: 3vw;
+  }
+  #sub_login {
+    width: 19vw;
+    height: 5vh;
+  }
+  .login_error {
+    font-size: 2.2vw;
+    margin-top: -1vh;
+    margin-bottom: -4vh;
+    margin-right: 10vw;
+    padding: 0;
+  }
+  /*Style du formulaire de login*/
+  /*Style du formulaire de signup*/
+  .sign {
+    font-size: 3.5vw;
+  }
+  .signup {
+    margin: 10vh 0;
+    padding: 4vh 5vw;
+    gap: 4vh;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
+    border-radius: 1vw;
+  }
+  .body_signup {
+    gap: 4vh;
+  }
+  .sign_up_log {
+    display: flex;
+    gap: 3vw;
+  }
+  #username, #confirm_password {
+    width: 37vw;
+    padding: 1.5vh;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #username {
+    width: 42vw;
+  }
+  #sub_signup {
+    width: 23vw;
+    height: 5vh;
+  }
+  .dev_choice {
+    display: flex;
+    flex-direction: row;
+  }
+  .status {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #info_dev {
+    font-size: 2.2vw;
+    margin-top: -2vh;
+    margin-bottom: -3vh;
+  }
+  #password, #confirm_password {
+    border: none;
+    width: 37vw;
+  }
+  .password_container {
+    background-color: rgb(255, 255, 255);
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border: 1px solid #000;
+    border-radius: 1vw;
+  }
+  .password_container img {
+    height: 2.3vw;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .error_email {
+    font-size: 2.2vw;
+    margin-top: -2.2vh;
+    margin-bottom: -4vh;
+    margin-left: 0.5vw;
+  }
+  .error_password {
+    font-size: 2.2vw;
+    margin-top: -2.2vh;
+    margin-bottom: -4vh;
+    margin-left: 0.5vw;
+  }
+  /*Style du formulaire de signup*/
+  /*Style du menu du catalog*/
+  .user {
+    height: 6vw;
+  }
+  .menu {
+    display: none;
+    background-color: rgb(25, 24, 24);
+    position: absolute;
+    width: 40vw;
+    top: 0;
+    right: -21vw;
+    border-radius: 2vw 0vw 0vw 2vw;
+    border-right: 1px solid rgb(25, 24, 24);
+  }
+  .headermenu {
+    padding: 2.85vh 2vw;
+  }
+  .headermenu img {
+    height: 3vw;
+  }
+  .usernamemenu {
+    display: flex;
+    gap: 1vw;
+    justify-content: space-between;
+  }
+  .usernamemenu img {
+    height: 6vw;
+  }
+  .menu ul {
+    margin-left: 5vw;
+    gap: 4vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 0;
+    list-style-type: none;
+  }
+  /*Style du menu du catalog*/
 }
 
 /*# sourceMappingURL=style.css.map */
